@@ -1,4 +1,5 @@
-import Modal from "./components/Modal";
+import Home from "./components/Home";
+import MainLayout from "./components/MainLayout";
 
 const App = () => {
   return (
@@ -11,7 +12,7 @@ const App = () => {
         justifyContent: "center",
       }}
     >
-      <Modal />
+      <MainLayout></MainLayout>
     </div>
   );
 };
