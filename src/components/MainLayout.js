@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import AddNew from "./AddNew";
+import { Form, Col, Button } from "react-bootstrap";
 
 const MainLayout = (params) => {
   const [netEarnings, setNetEarnings] = useState([]);
@@ -62,7 +63,118 @@ const MainLayout = (params) => {
     console.log("Received values of form:", values);
   };
 
-  return <AddNew></AddNew>;
+  return (
+    <div>
+      <h1>Home Financing</h1>
+      <Form>
+        <Form.Row>
+          <Form.Group as={Col} controlId="formGridEmail">
+            <Form.Label>Fecha</Form.Label>
+            <Form.Control type="date" />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridEmail">
+            <Form.Label>Bn Gaston</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Bn Credito</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Bn Sam</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridEmail">
+            <Form.Label>Bn Erick</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Bn Tongas</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+        </Form.Row>
+
+        <Form.Row>
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Sc Gaston</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Sc Sam</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Bcmr Gaston</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+
+          <Form.Group as={Col} controlId="formGridEmail">
+            <Form.Label>Bnmx Sam</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+
+          <Form.Group as={Col} controlId="formGridEmail">
+            <Form.Label>Bnmx Tongas</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+        </Form.Row>
+
+        <Form.Row>
+          <Form.Group as={Col} controlId="formGridEmail">
+            <Form.Label>Cash</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>USD</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Password</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Cambio</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridEmail">
+            <Form.Label>Otros</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridEmail">
+            <Form.Label>Amex</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+        </Form.Row>
+
+        <Form.Row>
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Prestamos</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Otros</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+          <Form.Group as={Col} controlId="formGridPassword">
+            <Form.Label>Mercado</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+        </Form.Row>
+
+        <Form.Row>
+          <Form.Group as={Col} controlId="formGridEmail">
+            <Form.Label>Motos</Form.Label>
+            <Form.Control type="number" value="0" />
+          </Form.Group>
+        </Form.Row>
+
+        <Button>Calcular</Button>
+        <Button>Guardar</Button>
+      </Form>
+    </div>
+  );
 };
 
 export default MainLayout;
